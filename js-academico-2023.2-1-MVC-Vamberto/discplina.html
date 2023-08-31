@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gerenciamento de Disciplinas</title>
+</head>
+
+<body>
+
+    Código da Disciplina: <input id="codigoDisciplina"><br>
+    Nome da Disciplina: <input id="nomeDisciplina"><br>
+
+    Aluno a ser adicionado: <input id="alunoParaAdicionar"><br>
+    <button onclick="controladorDisciplina.inserirDisciplina()">Cadastrar Disciplina</button>
+    <button onclick="controladorDisciplina.adicionarAlunoNaDisciplina()">Adicionar Aluno</button>
+
+    <ul id="listaDisciplinas"></ul>
+
+
+
+    <script src="modelo/aluno.js"></script>
+    <script src="repositorio/aluno_repositorio.js"></script>
+    <script src="servico/aluno_service.js"></script>
+    <script src="controlador/aluno_controlador.js"></script>
+
+    <script src="modelo/disciplina.js"></script>
+    <script src="repositorio/disciplina_repositorio.js"></script>
+    <script src="servico/disciplina_servico.js"></script>
+    <script src="controlador/disciplina_controlador.js"></script>
+
+</body>
+
+</html>
